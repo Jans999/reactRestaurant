@@ -12,6 +12,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Menu from './components/Menu'
 import TableBooking from './components/TableBooking'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           <Home />
         </Route>
       </Switch>
-
+      
+      <Footer />
     </div>
   );
 }

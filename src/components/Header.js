@@ -16,13 +16,12 @@ export default class Header extends Component {
     constructor() {
         super()
         this.state = {
-            isOpen: false,
             setIsOpen: false
         }
     }
 
     toggle = () => {
-        this.setState({setIsOpen: !this.state.isOpen})
+        this.setState(prevState => ({setIsOpen: !prevState.setIsOpen}))
     }
 
     render() {
@@ -30,9 +29,9 @@ export default class Header extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">FOOD</NavbarBrand>
+                    <NavbarBrand href="/">TGI Saturday</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
+                    <Collapse isOpen={this.state.setIsOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
                         <NavLink href="/tableBooking">Book a table</NavLink>

@@ -1,1 +1,26 @@
+/* Sticky Footer */
 
+/* html, body, #App {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  footer {
+    flex-shrink: 0;
+  } */
+
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+  }
+
+
+  
